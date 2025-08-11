@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<messages>
+    <!-- Shutdown Message -->
+			<message>
+				<deadline>420</deadline>
+				<shutdown>1</shutdown>
+				<text>#name will shutdown in #tmin minutes.</text>
+			</message>
+    <!-- Message 1: Flag Reminder (every 2 hours) -->
+    <message>
+        <repeat>7200</repeat>
+        <onconnect>0</onconnect>
+        <text>Please ensure your base has a raised flag, and remember to lower it before abandoning it.</text>
+    </message>
+    <!-- Message 2 -->
+			<message>
+		<delay>2</delay>
+        <repeat>150</repeat>
+        <onconnect>1</onconnect>
+        <text>For assistance or to report an issue, please contact the owner :Dieselunow.</text>
+    </message>
+    <!-- Message 3: Base Location Screenshot (every 90 minutes) -->
+    <message>
+        <repeat>5400</repeat>
+        <onconnect>0</onconnect>
+        <text>Please send a screenshot of your base location to Dieselunow to confirm its position and protect it from base wipes.</text>
+    </message>
+	<!-- Message 4 -->
+			<message>
+        <repeat>60</repeat>
+        <onconnect>0</onconnect>
+        <text>Please note that unscheduled server restarts may take place to apply necessary fixes and introduce additional content.</text>
+    </message>
+	<!-- Message 5 -->
+			<message>
+        <delay>3</delay>
+        <repeat>30</repeat>
+        <onconnect>1</onconnect>
+        <text>This PVE server prohibits KOS, raiding, griefing, exploits, and scripting. Respect all players, do not hoard vehicles, and do not block off large areas of the map.</text>
+    </message>
+	<!--General server reminder every 10 minutes -->
+    <message>
+        <delay>10</delay>
+        <repeat>10</repeat>
+        <onconnect>1</onconnect>
+        <text>A trader is located at Radio Zennit. Please contact The_man_jag1999 for all transactions. Cigarettes are used as the server's currency.</text>
+    </message>
+	<!-- Message 6 -->
+			<message>
+        <repeat>7</repeat>
+        <onconnect>1</onconnect>
+        <text>Admins will broadcast a radio network on 96.6 MHz. Tune in for announcements.</text>
+    </message>
+</messages>
