@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!-- 'reset' and 'enable' are a bool, and therefore supports: 0/1, true/false, yes/no -->
+<!-- 'reset' controls whether you want to load in the weather from storage or not (false by default) -->
+<!-- 'enable' controls whether this file is enabled or not (true by default) -->
+<weather reset="0" enable="1">
+    <overcast>
+        <current actual="0.3" time="1200" duration="7200" />
+        <limits min="0.1" max="0.5" />
+        <timelimits min="5400" max="10800" /> <!-- Changes every 1.5 to 3 hours -->
+        <changelimits min="0.01" max="0.03" /> <!-- Minimal shifts -->
+    </overcast>
+
+    <fog>
+        <current actual="0.01" time="900" duration="3600" />
+        <limits min="0.0" max="0.04" />
+        <timelimits min="3600" max="7200" />
+        <changelimits min="0.0" max="0.02" />
+    </fog>
+
+    <rain>
+        <current actual="0.0" time="300" duration="900" />
+        <limits min="0.0" max="0.1" /> <!-- Very weak rain only -->
+        <timelimits min="5400" max="7200" /> <!-- Very slow rain onset/clearing -->
+        <changelimits min="0.0" max="0.05" />
+        <thresholds min="0.75" max="0.9" end="600" /> <!-- Rain only under near-heavy overcast -->
+    </rain>
+
+    <windMagnitude>
+        <current actual="3.0" time="900" duration="1800" />
+        <limits min="0.0" max="8.0" />
+        <timelimits min="1200" max="2400" />
+        <changelimits min="0.0" max="3.0" />
+    </windMagnitude>
+
+    <windDirection>
+        <current actual="0.0" time="900" duration="1800" />
+        <limits min="-3.14" max="3.14" />
+        <timelimits min="1200" max="3600" />
+        <changelimits min="-0.1" max="0.2" />
+    </windDirection>
+
+    <snowfall>
+        <current actual="0.0" time="0" duration="32768" />
+        <limits min="0.0" max="0.15" />
+        <timelimits min="7200" max="10800" /> <!-- Slow, rare snow -->
+        <changelimits min="0.0" max="0.05" />
+        <thresholds min="0.9" max="1.0" end="600" /> <!-- Snow only under near-maximum overcast -->
+    </snowfall>
+
+    <storm density="0.01" threshold="0.95" timeout="600"/>
+</weather>
